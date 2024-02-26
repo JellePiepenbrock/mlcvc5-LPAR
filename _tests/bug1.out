@@ -1,0 +1,7 @@
+### cvc5 --no-cbqi --qlogging --lightGBModelQuantifiers=model.lgb --qsel-fallback --qsel-epsilon=0.1 --qsel-formula-context --produce-proofs --no-e-matching --full-saturate-quant --dump-instantiations  /local1/yan/atp/benchmarks/smtlib/FP/2019-Preiner/11_53_RNA_fp.abs_fp.gt.smt2
+; Loaded quantifier ML with 723 features from: model.lgb
+Fatal failure within void cvc5::internal::theory::quantifiers::QuantifierLogger::registerCurrentInstantiationBody(cvc5::internal::Node, cvc5::internal::Node) at /home/yan/repos/cbboyan/mycvc5/src/theory/quantifiers/quantifier_logger.cpp:358
+Check failure
+
+ d_currentInstantiationBody.isNull() && d_currentInstantiationQuantifier.isNull()
+

@@ -1,0 +1,88 @@
+recordAssertions: 
+QuantifiersEngine : Register quantifier  : (forall ((?x Any)) (or (r ?x) (s ?x)))
+ Owner : [none]
+QuantifiersEngine : Register quantifier  : (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+ Owner : [none]
+QuantifiersEngine : Register quantifier  : (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+ Owner : [none]
+registerInstantiationRound: 0
+registerCandidate: (forall ((?x Any)) (or (r ?x) (s ?x))) | 0 | a | 1
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+registerCandidate: (forall ((?x Any)) (or (r ?x) (s ?x))) | 0 | b | 1
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+registerCandidate: (forall ((?x Any)) (or (r ?x) (s ?x))) | 0 | c | 1
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+increasePhase: (forall ((?x Any)) (or (r ?x) (s ?x)))
+registerInstantiationAttempt: (forall ((?x Any)) (or (r ?x) (s ?x))) | [a]
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+registerCurrentInstantiationBody: (forall ((?x Any)) (or (r ?x) (s ?x))) | (=> (forall ((?x Any)) (or (r ?x) (s ?x))) (or (r a) (s a)))
+registerInstantiation: (forall ((?x Any)) (or (r ?x) (s ?x))) | 1 | [a]
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+registerCandidate: (forall ((?x Any)) (or (not (r ?x)) (p ?x))) | 0 | a | 1
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+registerCandidate: (forall ((?x Any)) (or (not (r ?x)) (p ?x))) | 0 | b | 1
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+registerCandidate: (forall ((?x Any)) (or (not (r ?x)) (p ?x))) | 0 | c | 1
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+increasePhase: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+registerInstantiationAttempt: (forall ((?x Any)) (or (not (r ?x)) (p ?x))) | [a]
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+registerCurrentInstantiationBody: (forall ((?x Any)) (or (not (r ?x)) (p ?x))) | (=> (forall ((?x Any)) (or (not (r ?x)) (p ?x))) (or (not (r a)) (p a)))
+registerInstantiation: (forall ((?x Any)) (or (not (r ?x)) (p ?x))) | 1 | [a]
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+registerCandidate: (forall ((?x Any)) (or (not (s ?x)) (p ?x))) | 0 | a | 1
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+registerCandidate: (forall ((?x Any)) (or (not (s ?x)) (p ?x))) | 0 | b | 1
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+registerCandidate: (forall ((?x Any)) (or (not (s ?x)) (p ?x))) | 0 | c | 1
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+increasePhase: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+registerInstantiationAttempt: (forall ((?x Any)) (or (not (s ?x)) (p ?x))) | [a]
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+registerCurrentInstantiationBody: (forall ((?x Any)) (or (not (s ?x)) (p ?x))) | (=> (forall ((?x Any)) (or (not (s ?x)) (p ?x))) (or (not (s a)) (p a)))
+registerInstantiation: (forall ((?x Any)) (or (not (s ?x)) (p ?x))) | 1 | [a]
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+unsat
+registerUsefulInstantiation: (instantiations (forall ((?x Any)) (or (r ?x) (s ?x)))
+  ( a )
+)
+
+getQuantifierInfo: (forall ((?x Any)) (or (r ?x) (s ?x)))
+registerUsefulInstantiation: (instantiations (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+  ( a )
+)
+
+getQuantifierInfo: (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+registerUsefulInstantiation: (instantiations (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+  ( a )
+)
+
+getQuantifierInfo: (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+print: 
+; QUANTIFIER SAMPLES
+assertionsBOW: 
+; Q : (forall ((?x Any)) (or (r ?x) (s ?x))) 1 
+1 7:3 8:3 14:1 15:3 18:3 21:9 347:3 351:3 368:1 378:1 381:2 707:1 711:1 720:4 721:1 722:1
+; 1 F_VARIABLE:3 F_BOUND_VARIABLE:3 F_CONST_BOOLEAN:1 F_not:3 F_or:3 F_APPLY_UF:9 F_forall:3 F_BOUND_VAR_LIST:3 Q_BOUND_VARIABLE:1 Q_or:1 Q_APPLY_UF:2 Q_forall:1 Q_BOUND_VAR_LIST:1 Q_depth:4 Q_variables:1 __CLOSING__:1
+; Q : (forall ((?x Any)) (or (not (r ?x)) (p ?x))) 1 
+1 7:3 8:3 14:1 15:3 18:3 21:9 347:3 351:3 368:1 375:1 378:1 381:2 707:1 711:1 720:5 721:1 722:1
+; 1 F_VARIABLE:3 F_BOUND_VARIABLE:3 F_CONST_BOOLEAN:1 F_not:3 F_or:3 F_APPLY_UF:9 F_forall:3 F_BOUND_VAR_LIST:3 Q_BOUND_VARIABLE:1 Q_not:1 Q_or:1 Q_APPLY_UF:2 Q_forall:1 Q_BOUND_VAR_LIST:1 Q_depth:5 Q_variables:1 __CLOSING__:1
+; Q : (forall ((?x Any)) (or (not (s ?x)) (p ?x))) 1 
+1 7:3 8:3 14:1 15:3 18:3 21:9 347:3 351:3 368:1 375:1 378:1 381:2 707:1 711:1 720:5 721:1 722:1
+; 1 F_VARIABLE:3 F_BOUND_VARIABLE:3 F_CONST_BOOLEAN:1 F_not:3 F_or:3 F_APPLY_UF:9 F_forall:3 F_BOUND_VAR_LIST:3 Q_BOUND_VARIABLE:1 Q_not:1 Q_or:1 Q_APPLY_UF:2 Q_forall:1 Q_BOUND_VAR_LIST:1 Q_depth:5 Q_variables:1 __CLOSING__:1
+; END QUANTIFIER SAMPLES
+; QUANTIFIER FEATURE_NAMES
+ 0:F_NULL 1:F_SORT_TYPE 2:F_INSTANTIATED_SORT_TYPE 3:F_UNINTERPRETED_SORT_VALUE 4:F_BUILTIN 5:F_= 6:F_distinct 7:F_VARIABLE 8:F_BOUND_VARIABLE 9:F_SKOLEM 10:F_SEXPR 11:F_witness 12:F_TYPE_CONSTANT 13:F_RAW_SYMBOL 14:F_CONST_BOOLEAN 15:F_not 16:F_and 17:F_=> 18:F_or 19:F_xor 20:F_ite 21:F_APPLY_UF 22:F_FUNCTION_TYPE 23:F_lambda 24:F_BOOLEAN_TERM_VARIABLE 25:F_@ 26:F_CARDINALITY_CONSTRAINT_OP 27:F_CARDINALITY_CONSTRAINT 28:F_COMBINED_CARDINALITY_CONSTRAINT_OP 29:F_COMBINED_CARDINALITY_CONSTRAINT 30:F_FUNCTION_ARRAY_CONST 31:F_bv2nat 32:F_INT_TO_BITVECTOR_OP 33:F_int2bv 34:F_+ 35:F_* 36:F_* 37:F_- 38:F_- 39:F_/ 40:F_/ 41:F_div 42:F_div 43:F_mod 44:F_mod 45:F_abs 46:F_DIVISIBLE 47:F_^ 48:F_int.pow2 49:F_exp 50:F_sin 51:F_cos 52:F_tan 53:F_csc 54:F_sec 55:F_cot 56:F_arcsin 57:F_arccos 58:F_arctan 59:F_arccsc 60:F_arcsec 61:F_arccot 62:F_sqrt 63:F_DIVISIBLE_OP 64:F_CONST_RATIONAL 65:F_CONST_INTEGER 66:F_REAL_ALGEBRAIC_NUMBER_OP 67:F_REAL_ALGEBRAIC_NUMBER 68:F_< 69:F_<= 70:F_> 71:F_>= 72:F_INDEXED_ROOT_PREDICATE_OP 73:F_INDEXED_ROOT_PREDICATE 74:F_is_int 75:F_to_int 76:F_to_real 77:F_real.pi 78:F_IAND_OP 79:F_iand 80:F_BITVECTOR_TYPE 81:F_CONST_BITVECTOR 82:F_bbT 83:F_concat 84:F_bvand 85:F_bvcomp 86:F_bvor 87:F_bvxor 88:F_bvnot 89:F_bvnand 90:F_bvnor 91:F_bvxnor 92:F_bvmul 93:F_bvneg 94:F_bvadd 95:F_bvsub 96:F_bvudiv 97:F_bvurem 98:F_bvsdiv 99:F_bvsmod 100:F_bvsrem 101:F_bvashr 102:F_bvlshr 103:F_bvshl 104:F_bvule 105:F_bvult 106:F_bvuge 107:F_bvugt 108:F_bvsle 109:F_bvslt 110:F_bvsge 111:F_bvsgt 112:F_BITVECTOR_ULTBV 113:F_BITVECTOR_SLTBV 114:F_bvredand 115:F_bvredor 116:F_bvuaddo 117:F_bvumulo 118:F_bvsmulo 119:F_BITVECTOR_ITE 120:F_BITVECTOR_ACKERMANNIZE_UDIV 121:F_BITVECTOR_ACKERMANNIZE_UREM 122:F_BITVECTOR_EAGER_ATOM 123:F_BITVECTOR_BITOF_OP 124:F_BITVECTOR_BITOF 125:F_BITVECTOR_EXTRACT_OP 126:F_extract 127:F_BITVECTOR_REPEAT_OP 128:F_repeat 129:F_BITVECTOR_ROTATE_LEFT_OP 130:F_rotate_left 131:F_BITVECTOR_ROTATE_RIGHT_OP 132:F_rotate_right 133:F_BITVECTOR_SIGN_EXTEND_OP 134:F_sign_extend 135:F_BITVECTOR_ZERO_EXTEND_OP 136:F_zero_extend 137:F_FINITE_FIELD_TYPE 138:F_CONST_FINITE_FIELD 139:F_FINITE_FIELD_MULT 140:F_FINITE_FIELD_NEG 141:F_FINITE_FIELD_ADD 142:F_CONST_FLOATINGPOINT 143:F_CONST_ROUNDINGMODE 144:F_FLOATINGPOINT_TYPE 145:F_fp 146:F_fp.eq 147:F_fp.abs 148:F_fp.neg 149:F_fp.add 150:F_fp.sub 151:F_fp.mul 152:F_fp.div 153:F_fp.fma 154:F_fp.sqrt 155:F_fp.rem 156:F_fp.roundToIntegral 157:F_fp.min 158:F_fp.max 159:F_fp.min_total 160:F_fp.max_total 161:F_fp.leq 162:F_fp.lt 163:F_fp.geq 164:F_fp.gt 165:F_fp.isNormal 166:F_fp.isSubnormal 167:F_fp.isZero 168:F_fp.isInfinite 169:F_fp.isNaN 170:F_fp.isNegative 171:F_fp.isPositive 172:F_FLOATINGPOINT_TO_FP_FROM_IEEE_BV_OP 173:F_to_fp 174:F_FLOATINGPOINT_TO_FP_FROM_FP_OP 175:F_to_fp 176:F_FLOATINGPOINT_TO_FP_FROM_REAL_OP 177:F_to_fp 178:F_FLOATINGPOINT_TO_FP_FROM_SBV_OP 179:F_to_fp 180:F_FLOATINGPOINT_TO_FP_FROM_UBV_OP 181:F_to_fp_unsigned 182:F_FLOATINGPOINT_TO_UBV_OP 183:F_fp.to_ubv 184:F_FLOATINGPOINT_TO_UBV_TOTAL_OP 185:F_fp.to_ubv_total 186:F_FLOATINGPOINT_TO_SBV_OP 187:F_fp.to_sbv 188:F_FLOATINGPOINT_TO_SBV_TOTAL_OP 189:F_fp.to_sbv_total 190:F_fp.to_real 191:F_fp.to_real_total 192:F_NAN 193:F_INF 194:F_ZERO 195:F_SIGN 196:F_EXPONENT 197:F_SIGNIFICAND 198:F_RMBITBLAST 199:F_Array 200:F_select 201:F_store 202:F_eqrange 203:F_STORE_ALL 204:F_ARR_TABLE_FUN 205:F_ARRAY_LAMBDA 206:F_partial_select_0 207:F_partial_select_1 208:F_CONSTRUCTOR_TYPE 209:F_SELECTOR_TYPE 210:F_TESTER_TYPE 211:F_UPDATER_TYPE 212:F_APPLY_CONSTRUCTOR 213:F_APPLY_SELECTOR 214:F_is 215:F_update 216:F_DATATYPE_TYPE 217:F_PARAMETRIC_DATATYPE 218:F_Tuple 219:F_APPLY_TYPE_ASCRIPTION 220:F_ASCRIPTION_TYPE 221:F_DT_SIZE 222:F_DT_HEIGHT_BOUND 223:F_DT_SIZE_BOUND 224:F_DT_SYGUS_BOUND 225:F_DT_SYGUS_EVAL 226:F_match 227:F_MATCH_CASE 228:F_MATCH_BIND_CASE 229:F_TUPLE_PROJECT_OP 230:F_TUPLE_PROJECT 231:F_CODATATYPE_BOUND_VARIABLE 232:F_SEP_NIL 233:F_sep.emp 234:F_pto 235:F_sep 236:F_wand 237:F_SEP_LABEL 238:F_SET_EMPTY 239:F_Set 240:F_set.union 241:F_set.inter 242:F_set.minus 243:F_set.subset 244:F_set.member 245:F_set.singleton 246:F_set.insert 247:F_set.card 248:F_set.complement 249:F_SET_UNIVERSE 250:F_set.comprehension 251:F_set.choose 252:F_set.is_singleton 253:F_set.map 254:F_set.filter 255:F_set.fold 256:F_RELATION_GROUP_OP 257:F_rel.group 258:F_RELATION_AGGREGATE_OP 259:F_rel.aggr 260:F_RELATION_PROJECT_OP 261:F_rel.project 262:F_rel.join 263:F_rel.product 264:F_rel.transpose 265:F_rel.tclosure 266:F_rel.join_image 267:F_rel.iden 268:F_BAG_EMPTY 269:F_Bag 270:F_bag.union_max 271:F_bag.union_disjoint 272:F_bag.inter_min 273:F_bag.difference_subtract 274:F_bag.difference_remove 275:F_bag.subbag 276:F_bag.count 277:F_bag.member 278:F_bag.duplicate_removal 279:F_bag 280:F_bag.is_singleton 281:F_bag.card 282:F_bag.from_set 283:F_bag.to_set 284:F_bag.choose 285:F_bag.map 286:F_bag.filter 287:F_bag.fold 288:F_bag.partition 289:F_table.product 290:F_TABLE_PROJECT_OP 291:F_table.project 292:F_TABLE_AGGREGATE_OP 293:F_table.aggr 294:F_TABLE_JOIN_OP 295:F_table.join 296:F_TABLE_GROUP_OP 297:F_table.group 298:F_str.++ 299:F_str.in_re 300:F_str.len 301:F_str.substr 302:F_str.update 303:F_str.at 304:F_str.contains 305:F_str.< 306:F_str.<= 307:F_str.indexof 308:F_str.indexof_re 309:F_str.replace 310:F_str.replace_all 311:F_str.replace_re 312:F_str.replace_re_all 313:F_str.prefixof 314:F_str.suffixof 315:F_str.is_digit 316:F_str.from_int 317:F_str.to_int 318:F_str.to_code 319:F_str.from_code 320:F_str.unit 321:F_str.to_lower 322:F_str.to_upper 323:F_str.rev 324:F_CONST_STRING 325:F_Seq 326:F_CONST_SEQUENCE 327:F_seq.unit 328:F_seq.nth 329:F_str.to_re 330:F_re.++ 331:F_re.union 332:F_re.inter 333:F_re.diff 334:F_re.* 335:F_re.+ 336:F_re.opt 337:F_re.range 338:F_re.comp 339:F_re.none 340:F_re.all 341:F_re.allchar 342:F_REGEXP_REPEAT_OP 343:F_re.^ 344:F_REGEXP_LOOP_OP 345:F_re.loop 346:F_REGEXP_RV 347:F_forall 348:F_exists 349:F_INST_CONSTANT 350:F_ORACLE 351:F_BOUND_VAR_LIST 352:F_INST_PATTERN 353:F_INST_NO_PATTERN 354:F_INST_ATTRIBUTE 355:F_INST_POOL 356:F_INST_ADD_TO_POOL 357:F_SKOLEM_ADD_TO_POOL 358:F_ORACLE_FORMULA_GEN 359:F_INST_PATTERN_LIST 360:Q_NULL 361:Q_SORT_TYPE 362:Q_INSTANTIATED_SORT_TYPE 363:Q_UNINTERPRETED_SORT_VALUE 364:Q_BUILTIN 365:Q_= 366:Q_distinct 367:Q_VARIABLE 368:Q_BOUND_VARIABLE 369:Q_SKOLEM 370:Q_SEXPR 371:Q_witness 372:Q_TYPE_CONSTANT 373:Q_RAW_SYMBOL 374:Q_CONST_BOOLEAN 375:Q_not 376:Q_and 377:Q_=> 378:Q_or 379:Q_xor 380:Q_ite 381:Q_APPLY_UF 382:Q_FUNCTION_TYPE 383:Q_lambda 384:Q_BOOLEAN_TERM_VARIABLE 385:Q_@ 386:Q_CARDINALITY_CONSTRAINT_OP 387:Q_CARDINALITY_CONSTRAINT 388:Q_COMBINED_CARDINALITY_CONSTRAINT_OP 389:Q_COMBINED_CARDINALITY_CONSTRAINT 390:Q_FUNCTION_ARRAY_CONST 391:Q_bv2nat 392:Q_INT_TO_BITVECTOR_OP 393:Q_int2bv 394:Q_+ 395:Q_* 396:Q_* 397:Q_- 398:Q_- 399:Q_/ 400:Q_/ 401:Q_div 402:Q_div 403:Q_mod 404:Q_mod 405:Q_abs 406:Q_DIVISIBLE 407:Q_^ 408:Q_int.pow2 409:Q_exp 410:Q_sin 411:Q_cos 412:Q_tan 413:Q_csc 414:Q_sec 415:Q_cot 416:Q_arcsin 417:Q_arccos 418:Q_arctan 419:Q_arccsc 420:Q_arcsec 421:Q_arccot 422:Q_sqrt 423:Q_DIVISIBLE_OP 424:Q_CONST_RATIONAL 425:Q_CONST_INTEGER 426:Q_REAL_ALGEBRAIC_NUMBER_OP 427:Q_REAL_ALGEBRAIC_NUMBER 428:Q_< 429:Q_<= 430:Q_> 431:Q_>= 432:Q_INDEXED_ROOT_PREDICATE_OP 433:Q_INDEXED_ROOT_PREDICATE 434:Q_is_int 435:Q_to_int 436:Q_to_real 437:Q_real.pi 438:Q_IAND_OP 439:Q_iand 440:Q_BITVECTOR_TYPE 441:Q_CONST_BITVECTOR 442:Q_bbT 443:Q_concat 444:Q_bvand 445:Q_bvcomp 446:Q_bvor 447:Q_bvxor 448:Q_bvnot 449:Q_bvnand 450:Q_bvnor 451:Q_bvxnor 452:Q_bvmul 453:Q_bvneg 454:Q_bvadd 455:Q_bvsub 456:Q_bvudiv 457:Q_bvurem 458:Q_bvsdiv 459:Q_bvsmod 460:Q_bvsrem 461:Q_bvashr 462:Q_bvlshr 463:Q_bvshl 464:Q_bvule 465:Q_bvult 466:Q_bvuge 467:Q_bvugt 468:Q_bvsle 469:Q_bvslt 470:Q_bvsge 471:Q_bvsgt 472:Q_BITVECTOR_ULTBV 473:Q_BITVECTOR_SLTBV 474:Q_bvredand 475:Q_bvredor 476:Q_bvuaddo 477:Q_bvumulo 478:Q_bvsmulo 479:Q_BITVECTOR_ITE 480:Q_BITVECTOR_ACKERMANNIZE_UDIV 481:Q_BITVECTOR_ACKERMANNIZE_UREM 482:Q_BITVECTOR_EAGER_ATOM 483:Q_BITVECTOR_BITOF_OP 484:Q_BITVECTOR_BITOF 485:Q_BITVECTOR_EXTRACT_OP 486:Q_extract 487:Q_BITVECTOR_REPEAT_OP 488:Q_repeat 489:Q_BITVECTOR_ROTATE_LEFT_OP 490:Q_rotate_left 491:Q_BITVECTOR_ROTATE_RIGHT_OP 492:Q_rotate_right 493:Q_BITVECTOR_SIGN_EXTEND_OP 494:Q_sign_extend 495:Q_BITVECTOR_ZERO_EXTEND_OP 496:Q_zero_extend 497:Q_FINITE_FIELD_TYPE 498:Q_CONST_FINITE_FIELD 499:Q_FINITE_FIELD_MULT 500:Q_FINITE_FIELD_NEG 501:Q_FINITE_FIELD_ADD 502:Q_CONST_FLOATINGPOINT 503:Q_CONST_ROUNDINGMODE 504:Q_FLOATINGPOINT_TYPE 505:Q_fp 506:Q_fp.eq 507:Q_fp.abs 508:Q_fp.neg 509:Q_fp.add 510:Q_fp.sub 511:Q_fp.mul 512:Q_fp.div 513:Q_fp.fma 514:Q_fp.sqrt 515:Q_fp.rem 516:Q_fp.roundToIntegral 517:Q_fp.min 518:Q_fp.max 519:Q_fp.min_total 520:Q_fp.max_total 521:Q_fp.leq 522:Q_fp.lt 523:Q_fp.geq 524:Q_fp.gt 525:Q_fp.isNormal 526:Q_fp.isSubnormal 527:Q_fp.isZero 528:Q_fp.isInfinite 529:Q_fp.isNaN 530:Q_fp.isNegative 531:Q_fp.isPositive 532:Q_FLOATINGPOINT_TO_FP_FROM_IEEE_BV_OP 533:Q_to_fp 534:Q_FLOATINGPOINT_TO_FP_FROM_FP_OP 535:Q_to_fp 536:Q_FLOATINGPOINT_TO_FP_FROM_REAL_OP 537:Q_to_fp 538:Q_FLOATINGPOINT_TO_FP_FROM_SBV_OP 539:Q_to_fp 540:Q_FLOATINGPOINT_TO_FP_FROM_UBV_OP 541:Q_to_fp_unsigned 542:Q_FLOATINGPOINT_TO_UBV_OP 543:Q_fp.to_ubv 544:Q_FLOATINGPOINT_TO_UBV_TOTAL_OP 545:Q_fp.to_ubv_total 546:Q_FLOATINGPOINT_TO_SBV_OP 547:Q_fp.to_sbv 548:Q_FLOATINGPOINT_TO_SBV_TOTAL_OP 549:Q_fp.to_sbv_total 550:Q_fp.to_real 551:Q_fp.to_real_total 552:Q_NAN 553:Q_INF 554:Q_ZERO 555:Q_SIGN 556:Q_EXPONENT 557:Q_SIGNIFICAND 558:Q_RMBITBLAST 559:Q_Array 560:Q_select 561:Q_store 562:Q_eqrange 563:Q_STORE_ALL 564:Q_ARR_TABLE_FUN 565:Q_ARRAY_LAMBDA 566:Q_partial_select_0 567:Q_partial_select_1 568:Q_CONSTRUCTOR_TYPE 569:Q_SELECTOR_TYPE 570:Q_TESTER_TYPE 571:Q_UPDATER_TYPE 572:Q_APPLY_CONSTRUCTOR 573:Q_APPLY_SELECTOR 574:Q_is 575:Q_update 576:Q_DATATYPE_TYPE 577:Q_PARAMETRIC_DATATYPE 578:Q_Tuple 579:Q_APPLY_TYPE_ASCRIPTION 580:Q_ASCRIPTION_TYPE 581:Q_DT_SIZE 582:Q_DT_HEIGHT_BOUND 583:Q_DT_SIZE_BOUND 584:Q_DT_SYGUS_BOUND 585:Q_DT_SYGUS_EVAL 586:Q_match 587:Q_MATCH_CASE 588:Q_MATCH_BIND_CASE 589:Q_TUPLE_PROJECT_OP 590:Q_TUPLE_PROJECT 591:Q_CODATATYPE_BOUND_VARIABLE 592:Q_SEP_NIL 593:Q_sep.emp 594:Q_pto 595:Q_sep 596:Q_wand 597:Q_SEP_LABEL 598:Q_SET_EMPTY 599:Q_Set 600:Q_set.union 601:Q_set.inter 602:Q_set.minus 603:Q_set.subset 604:Q_set.member 605:Q_set.singleton 606:Q_set.insert 607:Q_set.card 608:Q_set.complement 609:Q_SET_UNIVERSE 610:Q_set.comprehension 611:Q_set.choose 612:Q_set.is_singleton 613:Q_set.map 614:Q_set.filter 615:Q_set.fold 616:Q_RELATION_GROUP_OP 617:Q_rel.group 618:Q_RELATION_AGGREGATE_OP 619:Q_rel.aggr 620:Q_RELATION_PROJECT_OP 621:Q_rel.project 622:Q_rel.join 623:Q_rel.product 624:Q_rel.transpose 625:Q_rel.tclosure 626:Q_rel.join_image 627:Q_rel.iden 628:Q_BAG_EMPTY 629:Q_Bag 630:Q_bag.union_max 631:Q_bag.union_disjoint 632:Q_bag.inter_min 633:Q_bag.difference_subtract 634:Q_bag.difference_remove 635:Q_bag.subbag 636:Q_bag.count 637:Q_bag.member 638:Q_bag.duplicate_removal 639:Q_bag 640:Q_bag.is_singleton 641:Q_bag.card 642:Q_bag.from_set 643:Q_bag.to_set 644:Q_bag.choose 645:Q_bag.map 646:Q_bag.filter 647:Q_bag.fold 648:Q_bag.partition 649:Q_table.product 650:Q_TABLE_PROJECT_OP 651:Q_table.project 652:Q_TABLE_AGGREGATE_OP 653:Q_table.aggr 654:Q_TABLE_JOIN_OP 655:Q_table.join 656:Q_TABLE_GROUP_OP 657:Q_table.group 658:Q_str.++ 659:Q_str.in_re 660:Q_str.len 661:Q_str.substr 662:Q_str.update 663:Q_str.at 664:Q_str.contains 665:Q_str.< 666:Q_str.<= 667:Q_str.indexof 668:Q_str.indexof_re 669:Q_str.replace 670:Q_str.replace_all 671:Q_str.replace_re 672:Q_str.replace_re_all 673:Q_str.prefixof 674:Q_str.suffixof 675:Q_str.is_digit 676:Q_str.from_int 677:Q_str.to_int 678:Q_str.to_code 679:Q_str.from_code 680:Q_str.unit 681:Q_str.to_lower 682:Q_str.to_upper 683:Q_str.rev 684:Q_CONST_STRING 685:Q_Seq 686:Q_CONST_SEQUENCE 687:Q_seq.unit 688:Q_seq.nth 689:Q_str.to_re 690:Q_re.++ 691:Q_re.union 692:Q_re.inter 693:Q_re.diff 694:Q_re.* 695:Q_re.+ 696:Q_re.opt 697:Q_re.range 698:Q_re.comp 699:Q_re.none 700:Q_re.all 701:Q_re.allchar 702:Q_REGEXP_REPEAT_OP 703:Q_re.^ 704:Q_REGEXP_LOOP_OP 705:Q_re.loop 706:Q_REGEXP_RV 707:Q_forall 708:Q_exists 709:Q_INST_CONSTANT 710:Q_ORACLE 711:Q_BOUND_VAR_LIST 712:Q_INST_PATTERN 713:Q_INST_NO_PATTERN 714:Q_INST_ATTRIBUTE 715:Q_INST_POOL 716:Q_INST_ADD_TO_POOL 717:Q_SKOLEM_ADD_TO_POOL 718:Q_ORACLE_FORMULA_GEN 719:Q_INST_PATTERN_LIST 720:Q_depth 721:Q_variables 722:__CLOSING__
+
+(instantiations (forall ((?x Any)) (or (r ?x) (s ?x)))
+  ( a )
+)
+(instantiations (forall ((?x Any)) (or (not (r ?x)) (p ?x)))
+  ( a )
+)
+(instantiations (forall ((?x Any)) (or (not (s ?x)) (p ?x)))
+  ( a )
+)

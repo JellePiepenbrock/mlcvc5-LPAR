@@ -1,0 +1,8 @@
+#!/bin/sh
+
+./configure.sh debug --static --auto-download --dep-path=contrib/deps/install
+mkdir -p build/deps/include
+mkdir -p build/deps/lib
+cp contrib/deps/install/include/* build/deps/include
+cp contrib/deps/install/lib/* build/deps/lib
+

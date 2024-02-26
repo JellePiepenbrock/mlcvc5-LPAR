@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#contrib/get-lightgbm.sh
+./configure.sh production --auto-download 
+mkdir -p build/deps/include
+mkdir -p build/deps/lib
+cp contrib/deps/install/include/* build/deps/include
+cp contrib/deps/install/lib/* build/deps/lib
+
