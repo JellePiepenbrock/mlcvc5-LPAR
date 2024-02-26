@@ -26,6 +26,12 @@ performance and reduce the memory overhead of its predecessors.  It is written
 entirely in C++ and is released under an open-source software license (see file
 [COPYING](https://github.com/cvc5/cvc5/blob/main/COPYING)).
 
+mlcvc5
+-------------------------------------------------------------------------------
+
+This repository also includes code for the graph neural network approach described
+in "First experiments with neural cvc5". Model weights are included in the "models"
+folder.
 
 Website
 -------------------------------------------------------------------------------
