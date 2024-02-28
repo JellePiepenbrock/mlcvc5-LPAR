@@ -1,6 +1,7 @@
 #!/bin/sh
 
-#contrib/get-lightgbm.sh
+contrib/get-pytorch.sh
+contrib/get-pytorch-scatter.sh
 ./configure.sh production --auto-download 
 mkdir -p build/deps/include
 mkdir -p build/deps/lib
