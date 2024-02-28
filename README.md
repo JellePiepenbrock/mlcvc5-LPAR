@@ -33,6 +33,10 @@ This repository also includes code for the graph neural network approach describ
 in "First experiments with neural cvc5". Model weights are included in the "models"
 folder.
 
+Installation instructions are still work in progress. Run configure.sh.release to 
+set up the dependencies. In the current version, you do need CUDA installed, even
+though the inference can be done on CPU. 
+
 Website
 -------------------------------------------------------------------------------
 cvc5's website  is available at:
